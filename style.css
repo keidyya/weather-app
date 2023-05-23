@@ -104,44 +104,44 @@ body{
     text-transform: lowercase;
 }
 
-.weatherdetails{
+.weather-details{
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.weatherdetails .humidity .weatherdetails .wind{
+.weatherdetails .humidity .weather-details .wind{
     display: flex;
     align-items: center;
     width: 50%;
     height: 100px;
 }
 
-.weatherdetails .humidity{
+.weather-details .humidity{
     padding-left: 20px;
     justify-content: flex-start;
 }
 
-.weatherdetails .wind{
+.weather-details .wind{
     padding-right: 20px;
     justify-content: flex-end;
 }
 
-.weatherdetails i{
+.weather-details i{
     color: black;
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
-.weatherdetails span{
+.weather-details span{
     color: black;
     font-size: 22px;
     font-weight: 500;
 }
 
-.weatherdetails p{
+.weather-details p{
     color: black;
     font-size: 14px;
     font-weight: 500;
@@ -167,7 +167,24 @@ body{
     margin-top: 12px;
 }
 
-.weatherbox .weatherdetails {
+.weatherbox {
     scale: 0;
     opacity: 0;
+}
+
+.weather-details {
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
