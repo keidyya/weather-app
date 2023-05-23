@@ -73,16 +73,16 @@ body{
     font-size: 28px;
 }
 
-.weatherbox{
+.weather{
     text-align: center;
 }
 
-.weatherbox img{
+.weather img{
     width: 60%;
     margin-top: 30px;
 }
 
-.weatherbox .temperature{
+.weather .temperature{
     position: relative;
     color: black;
     font-size: 4rem;
@@ -91,13 +91,13 @@ body{
     margin-left: -16px;
 }
 
-.weatherbox .temperature span{
+.weather .temperature span{
     position: absolute;
     margin-left: 4px;
     font-size: 1.5rem;
 }
 
-.weatherbox .description{
+.weather .description{
     color: black;
     font-size: 22px;
     font-weight: 500;
@@ -126,4 +126,48 @@ body{
 .weatherdetails .wind{
     padding-right: 20px;
     justify-content: flex-end;
+}
+
+.weatherdetails i{
+    color: black;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weatherdetails span{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weatherdetails p{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notfound{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.notfound i{
+    width: 70%;
+}
+
+.notfound p{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.weatherbox .weatherdetails {
+    scale: 0;
+    opacity: 0;
 }
